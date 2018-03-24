@@ -1,0 +1,2 @@
+class Virus < ApplicationRecord
+end

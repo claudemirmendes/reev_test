@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :viri
   resources :items
   root :to => 'home#index'
   resources :survivors
