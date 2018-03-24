@@ -16,9 +16,12 @@ class SurvivorsController < ApplicationController
   # POST /survivors
   def create
     @survivor = Survivor.new(survivor_params)
+    items = params[:items]
 
     if @survivor.save
-      render json: @survivor, status: :created, location: @survivor
+      @survivor.create_inventory(@survivor.id,items)
+
+      render json: message: "sucesso"
     else
       render json: @survivor.errors, status: :unprocessable_entity
     end
