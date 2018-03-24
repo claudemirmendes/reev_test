@@ -1,9 +1,9 @@
-class ViriController < ApplicationController
+class VirusController < ApplicationController
   before_action :set_virus, only: [:show, :update, :destroy]
 
   # GET /viri
   def index
-    @viri = Virus.all
+    @virus = Virus.all
 
     render json: @viri
   end

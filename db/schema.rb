@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180324002607) do
+ActiveRecord::Schema.define(version: 20180324010324) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -34,7 +34,7 @@ ActiveRecord::Schema.define(version: 20180324002607) do
     t.boolean "infected"
   end
 
-  create_table "viri", force: :cascade do |t|
+  create_table "virus", force: :cascade do |t|
     t.integer "survivor_send_id"
     t.integer "survivor_infected_id"
     t.datetime "created_at", null: false
