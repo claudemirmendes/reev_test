@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :virus
+  resources :inform_infecteds
   resources :items
   root :to => 'home#index'
   resources :survivors
