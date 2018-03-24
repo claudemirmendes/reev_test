@@ -21,7 +21,7 @@ class SurvivorsController < ApplicationController
     if @survivor.save
       @survivor.create_inventory(@survivor.id,items)
 
-      render json: message: "sucesso"
+      render json: @survivor, status: :created, location: @survivor
     else
       render json: @survivor.errors, status: :unprocessable_entity
     end
