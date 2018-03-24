@@ -5,7 +5,7 @@ class InformInfected < ApplicationRecord
        survivor_id = params[:survivor_infected_id]
        @survivor = Survivor.where(id: survivor_id)
 
-       if @inform_infecteds.length >=3
+       if @inform_infecteds.length >= 3
        	    @survivor.infected(@survivor)
        end
 	end
