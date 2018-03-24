@@ -1,6 +1,6 @@
 class CreateViri < ActiveRecord::Migration[5.1]
   def change
-    create_table :viri do |t|
+    create_table :virus do |t|
       t.integer :survivor_send_id
       t.integer :survivor_infected_id
 
