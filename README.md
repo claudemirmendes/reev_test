@@ -1,24 +1,59 @@
-# README
+{
+    "items_send": [
+    	{"id" : "22"},
+    	{"id" : "23"}
+    	],
+      "items_received": [
+    	{"id" : "17"},
+    	{"id" : "18"}
+    	]
+}
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+/post
+operation exchanged
 
-Things you may want to cover:
 
-* Ruby version
 
-* System dependencies
+{
+    "lat" : "9999",
+    "long" : "99999"
+}
 
-* Configuration
+/put
 
-* Database creation
+update localization
 
-* Database initialization
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
 
-* ...
+{
+    "id": 30,
+    "lat": 9999,
+    "long": 99999,
+    "name": null,
+    "age": null,
+    "gender": null,
+    "created_at": "2018-03-26T02:22:51.044Z",
+    "updated_at": "2018-03-26T02:22:51.044Z",
+    "infected": null,
+    "items": [
+    	{"name" : "agua","tipo": 0}
+    	]
+}
+
+
+create survivor and your items and your inventory
+
+
+{
+ "survivor_send_id": 1
+ "survivor_infected_id": 1
+
+}
+
+
+
+/inform_infecteds
+
+information of contamination
