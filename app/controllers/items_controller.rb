@@ -38,6 +38,14 @@ class ItemsController < ApplicationController
     @item.destroy
   end
 
+  def create_exchanged
+    @items_send = params["items_send"]
+    @items_received = params["items_received"]
+    exchanged = Item.exchanged(@items_send,@items_received)
+
+    render json: @exchanged
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_item
